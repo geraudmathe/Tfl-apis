@@ -4,7 +4,7 @@ This gem aims to provide a wrapper for the tfl apis [http://www.tfl.gov.uk/busin
 For the moment , only the TIMS API is implemented.
 
 ## IT IS PRODUCTION READY ?
-# NO
+## NO
 
 ## Installation
 
@@ -24,6 +24,10 @@ Or install it yourself as:
 
 Once the gem is installed, you can use
 
+    TflApis::Tims.new "email@email.com"
+
+Before being able to use the api, you need to subscribe to [Tfl developer program](http://www.tfl.gov.uk/businessandpartners/syndication/16492.aspx)
+
 ## Contributing
 
 1. Fork it
@@ -31,3 +35,9 @@ Once the gem is installed, you can use
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
+## Todo
+
+* implement other Apis
+* tests !
+* report bugs to Tfl
