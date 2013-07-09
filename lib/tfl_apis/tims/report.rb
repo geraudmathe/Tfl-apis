@@ -10,7 +10,7 @@ module TflApis
       attr_reader :disruptions
 
       def initialize email
-        @disruptions = request_tfl_apis email
+        @disruptions = request_api email
       end
 
       def request_api email

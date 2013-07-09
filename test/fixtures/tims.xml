@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Root>
+ <Header>
+  <Identifier>Transport for London | Live Traffic Disruptions</Identifier>
+  <DisplayTitle>Transport for London | Traffic Information Management System (TIMS) Feed</DisplayTitle>
+  <Version>1.0</Version>
+  <PublishDateTime canonical="2013-06-23T20:37:48Z">Sunday, 23 Jun 2013 21:37:48 +01:00</PublishDateTime>
+  <Author>digital@tfl.gov.uk</Author>
+  <Owner>Transport for London</Owner>
+  <RefreshRate>5</RefreshRate>
+  <Max_Latency>30</Max_Latency>
+  <TimeToError>30</TimeToError>
+  <Schedule>Every 5 minutes</Schedule>
+  <Attribution>
+   <Url>http://www.tfl.gov.uk/</Url>
+   <Text>(c) Transport for London</Text>
+   <Logo>http://www.tfl.gov.uk/tfl-global/images/roundel.gif</Logo>
+  </Attribution>
+  <Language>EN</Language>
+ </Header>
+ <Disruptions>
+  <Disruption id='1066'>
+   <status>Active</status>
+   <severity>Moderate</severity>
+   <levelOfInterest>Medium</levelOfInterest>
+   <category>Works</category>
+   <subCategory>Utility</subCategory>
+   <startTime>2013-03-24T14:15:00Z</startTime>
+   <endTime>2013-07-05T19:00:00Z</endTime>
+   <location>Lymington Road</location>
+   <comments>A41 Finchley Road (Northbound) between Lithos Road and Lymington Road - Bus lane closed to facilitate gas works.</comments>
+   <currentUpdate>The northbound bus lane remains closed between Lithos Road and Lymington Road due to works. Traffic is slow moving on approach.</currentUpdate>
+   <remarkTime>2013-06-23T19:59:27Z</remarkTime>
+   <lastModTime>2013-06-23T19:59:27Z</lastModTime>
+   <CauseArea>
+    <DisplayPoint>
+     <Point>
+      <coordinatesEN>526020,185120</coordinatesEN>
+      <coordinatesLL>-.183834,51.55084</coordinatesLL>
+     </Point>
+    </DisplayPoint>
+    <Streets>
+     <Street>
+      <name>Lymington Road</name>
+       <closure>Open</closure>
+       <directions>All Directions</directions>
+       <Link>
+        <toid>4000000030223465</toid>
+        <Line>
+         <coordinatesEN>526020,185120,525940,185069</coordinatesEN>
+         <coordinatesLL>-.183834,51.55084,-.185006,51.550399</coordinatesLL>
+        </Line>
+       </Link>
+    </Street>
+    </Streets>
+   </CauseArea>
+  </Disruption>
+  <Disruption id='9030'>
+   <status>Active</status>
+   <severity>Moderate</severity>
+   <levelOfInterest>Medium</levelOfInterest>
+   <category>Works</category>
+   <subCategory>Utility</subCategory>
+   <startTime>2013-06-22T20:00:00Z</startTime>
+   <endTime>2013-06-24T05:00:00Z</endTime>
+   <location>Parliament Street (Westminster)</location>
+   <comments>Parliament Street (All Directions) at the junction of Bridge Street. Cappagh-Browne contractors working on behalf of Thames Water will be carrying out works in Parliament Square at the junction with Bridge Street. There will be various lane closures on the approach to this junction.</comments>
+   <currentUpdate>No restrictions currently in place for these works. </currentUpdate>
+   <remarkTime>2013-06-23T19:59:58Z</remarkTime>
+   <lastModTime>2013-06-23T19:59:58Z</lastModTime>
+   <CauseArea>
+    <DisplayPoint>
+     <Point>
+      <coordinatesEN>530159.484,179706.372</coordinatesEN>
+      <coordinatesLL>-.126159,51.501244</coordinatesLL>
+     </Point>
+    </DisplayPoint>
+    <Streets>
+     <Street>
+      <name>Parliament Street</name>
+       <closure>Open</closure>
+       <directions>All Directions</directions>
+       <Link>
+        <toid>4000000030779798</toid>
+        <Line>
+         <coordinatesEN>530153.03,179715.428,530142.308,179672.684</coordinatesEN>
+         <coordinatesLL>-.126249,51.501327,-.126419,51.500945</coordinatesLL>
+        </Line>
+       </Link>
+       <Link>
+        <toid>4000000030779797</toid>
+        <Line>
+         <coordinatesEN>530153.03,179715.428,530162.424,179670.222</coordinatesEN>
+         <coordinatesLL>-.126249,51.501327,-.12613,51.500919</coordinatesLL>
+        </Line>
+       </Link>
+       <Link>
+        <toid>4000000030237989</toid>
+        <Line>
+         <coordinatesEN>530159.699,179784.548,530153.03,179715.428</coordinatesEN>
+         <coordinatesLL>-.126127,51.501947,-.126249,51.501327</coordinatesLL>
+        </Line>
+       </Link>
+    </Street>
+     <Street>
+      <name>Parliament Square</name>
+       <closure>Open</closure>
+       <directions>All Directions</directions>
+       <Link>
+        <toid>4000000030779802</toid>
+        <Line>
+         <coordinatesEN>530083,179681,530142.308,179672.684</coordinatesEN>
+         <coordinatesLL>-.12727,51.501034,-.126419,51.500945</coordinatesLL>
+        </Line>
+       </Link>
+       <Link>
+        <toid>5000005103832755</toid>
+        <Line>
+         <coordinatesEN>530142.308,179672.684,530162.424,179670.222</coordinatesEN>
+         <coordinatesLL>-.126419,51.500945,-.12613,51.500919</coordinatesLL>
+        </Line>
+       </Link>
+       <Link>
+        <toid>4000000030418129</toid>
+        <Line>
+         <coordinatesEN>530162,179623,530162.424,179670.222</coordinatesEN>
+         <coordinatesLL>-.126154,51.500494,-.12613,51.500919</coordinatesLL>
+        </Line>
+       </Link>
+    </Street>
+     <Street>
+      <name>Bridge Street</name>
+       <closure>Open</closure>
+       <directions>All Directions</directions>
+       <Link>
+        <toid>5000005103832750</toid>
+        <Line>
+         <coordinatesEN>530303.044,179661.332,530162.424,179670.222</coordinatesEN>
+         <coordinatesLL>-.124109,51.500806,-.12613,51.500919</coordinatesLL>
+        </Line>
+       </Link>
+       <Link>
+        <toid>4000000031048408</toid>
+        <Line>
+         <coordinatesEN>530162.424,179670.222,530205.341,179671.997</coordinatesEN>
+         <coordinatesLL>-.12613,51.500919,-.125512,51.500925</coordinatesLL>
+        </Line>
+       </Link>
+    </Street>
+    </Streets>
+   </CauseArea>
+  </Disruption>
+  <Disruption id='4740'>
+   <status>Active</status>
+   <severity>Moderate</severity>
+   <levelOfInterest>Medium</levelOfInterest>
+   <category>Works</category>
+   <subCategory>Utility</subCategory>
+   <startTime>2013-05-13T07:00:00Z</startTime>
+   <endTime>2013-07-12T18:00:00Z</endTime>
+   <location>Commercial Road (Tower Hamlets)</location>
+   <corridor>A13</corridor>
+   <comments>A13 Commercial Road (Westbound) at the junction of Hessel Street. Lane one closed to facilitate BT works. </comments>
+   <currentUpdate>Lane one is closed. Traffic is moving well.</currentUpdate>
+   <remarkTime>2013-06-23T20:14:49Z</remarkTime>
+   <lastModTime>2013-06-23T20:14:49Z</lastModTime>
+   <CauseArea>
+    <DisplayPoint>
+     <Point>
+      <coordinatesEN>534561,181317</coordinatesEN>
+      <coordinatesLL>-.062162,51.514689</coordinatesLL>
+     </Point>
+    </DisplayPoint>
+    <Streets>
+     <Street>
+      <name>Commercial Road</name>
+       <closure>Open</closure>
+       <directions>West Bound</directions>
+       <Link>
+        <toid>4000000030345993</toid>
+        <Line>
+         <coordinatesEN>534504.254,181318.847,534550,181317</coordinatesEN>
+         <coordinatesLL>-.062979,51.514719,-.062321,51.514691</coordinatesLL>
+        </Line>
+       </Link>
+       <Link>
+        <toid>4000000030345994</toid>
+        <Line>
+         <coordinatesEN>534550,181317,534580,181316</coordinatesEN>
+         <coordinatesLL>-.062321,51.514691,-.061889,51.514675</coordinatesLL>
+        </Line>
+       </Link>
+       <Link>
+        <toid>4000000030345995</toid>
+        <Line>
+         <coordinatesEN>534580,181316,534631,181316</coordinatesEN>
+         <coordinatesLL>-.061889,51.514675,-.061155,51.514663</coordinatesLL>
+        </Line>
+       </Link>
+    </Street>
+     <Street>
+      <name>New Road</name>
+       <closure>Open</closure>
+       <directions>All Directions</directions>
+       <Link>
+        <toid>4000000030346005</toid>
+        <Line>
+         <coordinatesEN>534580,181316,534571,181365</coordinatesEN>
+         <coordinatesLL>-.061889,51.514675,-.062,51.515118</coordinatesLL>
+        </Line>
+       </Link>
+    </Street>
+     <Street>
+      <name>Cannon Street Road</name>
+       <closure>Open</closure>
+       <directions>All Directions</directions>
+       <Link>
+        <toid>4000000030240681</toid>
+        <Line>
+         <coordinatesEN>534595,181233,534580,181316</coordinatesEN>
+         <coordinatesLL>-.061705,51.513926,-.061889,51.514675</coordinatesLL>
+        </Line>
+       </Link>
+    </Street>
+     <Street>
+      <name>Hessel Street</name>
+       <closure>Open</closure>
+       <directions>All Directions</directions>
+       <Link>
+        <toid>4000000030240703</toid>
+        <Line>
+         <coordinatesEN>534550,181317,534544,181241</coordinatesEN>
+         <coordinatesLL>-.062321,51.514691,-.062436,51.51401</coordinatesLL>
+        </Line>
+       </Link>
+    </Street>
+    </Streets>
+   </CauseArea>
+  </Disruption>
+ </Disruptions>
+</Root>

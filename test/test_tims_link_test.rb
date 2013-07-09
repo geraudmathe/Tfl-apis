@@ -15,6 +15,8 @@ class LinkTest < Test::Unit::TestCase
   def node_mock
     mock = mock()
     @line_result = stub
+
+    xml = File.open("../fixtures/tims.xml", __FILE__).read
     mock.expects(:find_first).with("toid").returns(toid)
     mock.expects(:find_first).with("Line").returns(mock)
     Line.stubs(:new).with(mock).returns(@line_result)
