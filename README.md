@@ -4,7 +4,8 @@ This gem aims to provide a wrapper for the tfl apis [http://www.tfl.gov.uk/busin
 For the moment , only the TIMS API is implemented.
 
 ## IT IS PRODUCTION READY ?
-## NO
+
+# NO
 
 ## Installation
 
@@ -24,9 +25,18 @@ Or install it yourself as:
 
 Once the gem is installed, you can use
 
-    TflApis::Tims.new "email@email.com"
+    tims = TflApis::Tims::Report.new "email@email.com"
 
-Before being able to use the api, you need to subscribe to [Tfl developer program](http://www.tfl.gov.uk/businessandpartners/syndication/16492.aspx)
+Now you can access all data contained in the api like:
+    
+     tims.disruptions # returns an array containing all disruptions 
+     tims.disruptions.first # TflApis::Tims::Disruption
+     tims.disruptions.first.cause_area # TflApis::Tims::CauseArea
+     tims.disruptions.first.cause_area.streets # returns an array containing all streets
+     tims.disruptions.first.cause_area.streets.first # TflApis::Tims::Street
+     tims.disruptions.first.cause_area.streets.first.links.first.line.beginning_point_ll # returns an array containing beginning lng,lat corrdinates of the line 
+
+Before being able to use the api, you need to subscribe to [Tfl developer program](http://www.tfl.gov.uk/businessandpartners/syndication/16492.aspx) . 
 
 ## Contributing
 
@@ -41,3 +51,4 @@ Before being able to use the api, you need to subscribe to [Tfl developer progra
 * implement other Apis
 * tests !
 * report bugs to Tfl
+* handle polygons tags for tims

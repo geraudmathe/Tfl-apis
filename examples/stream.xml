@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<Root xmlns="http://www.tfl.gov.uk/tims/1.0">
+<Root>
  <Header>
   <Identifier>Transport for London | Live Traffic Disruptions</Identifier>
   <DisplayTitle>Transport for London | Traffic Information Management System (TIMS) Feed</DisplayTitle>
