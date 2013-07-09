@@ -4,7 +4,8 @@ This gem aims to provide a wrapper for the tfl apis [http://www.tfl.gov.uk/busin
 For the moment , only the TIMS API is implemented.
 
 ## IT IS PRODUCTION READY ?
-## NO
+
+# NO
 
 ## Installation
 
@@ -50,3 +51,4 @@ Before being able to use the api, you need to subscribe to [Tfl developer progra
 * implement other Apis
 * tests !
 * report bugs to Tfl
+* handle polygons tags for tims
