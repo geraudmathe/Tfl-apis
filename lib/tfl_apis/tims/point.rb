@@ -1,11 +1,18 @@
 module TflApis
   module Tims
     class Point
-      attr_reader :coordinates_en, :coordinates_ll
-      def initialize content
-        @coordinates_en = content.find_first("coordinatesEN").content.split(",")
-        @coordinates_ll = content.find_first("coordinatesLL").content.split(",")
+    	include SAXMachine
+    	element :coordinatesEN
+    	element :coordinatesLL
+
+      def coordinates_ll
+        @coordinatesLL.split(",")
+      end
+
+      def coordinates_en
+        @coordinatesEN.split(",")
       end
     end
+
   end
 end

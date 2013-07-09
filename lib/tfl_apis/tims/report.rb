@@ -1,21 +1,19 @@
-require "xml"
-
+require "sax-machine"
+require "benchmark"
 module TflApis
   module Tims
+    class Root
+      include SAXMachine
+      element :Header, as: :infos 
+      elements :Disruption, as: :disruptions, class: Disruption
+    end
+
     class Report
       attr_reader :disruptions
 
       def initialize email
-        @disruptions ||= get_data(email)
-        @disruptions
-
+        @disruptions = request_tfl_apis email
       end
-
-      def get_data email
-        content = request_tfl_apis email
-        create_disruptions content
-      end
-
 
       def request_tfl_apis email
         file = File.expand_path "../../../../examples/stream.xml", __FILE__
@@ -28,21 +26,15 @@ module TflApis
         # puts "response size #{response.body.size} bytes"
 
         # ###WORST HOOK POSSIBLE WHILE TFL DONT FIX THE XLMNS
-        content[0..300] = content[0..300].gsub!('xmlns="http://www.tfl.gov.uk/tims/1.0"', "")
-
-        puts "Parsing"
-        source = XML::Parser.string(content)
-        source.parse
-      end
-
-
-      def create_disruptions content
-        disruptions = content.find("//Root/Disruptions/Disruption")
-        disruptions.map do |disruption|
-          Disruption.new(disruption)
+        bm = Benchmark.measure do
+          @source = Root.parse content
         end
+        puts "Requested and parsed #{file.size} in #{bm.total} s"
+        @source.disruptions
       end
     end
   end
 end
+
+
 

@@ -1,11 +1,9 @@
 module TflApis
   module Tims
     class Link
-      attr_reader :toid, :line
-      def initialize content
-        @toid = content.find_first("toid")
-        @line = Line.new  content.find_first("Line")
-      end
+      include SAXMachine
+      element :toid, as: :to_id
+      element :Line, as: :line, class: Line
     end
   end
 end
