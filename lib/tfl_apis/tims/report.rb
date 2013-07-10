@@ -14,14 +14,13 @@ module TflApis
       end
 
       def request_api email
-        #file = File.expand_path "../../../../examples/stream.xml", __FILE__
-        #content = File.read file
-        # TODO: handle forbidden requests 
+        # TODO : handle forbidden requests 
         uri = "http://www.tfl.gov.uk/tfl/businessandpartners/syndication/feed.aspx?email=#{email}&feedId=40"
         uri = URI.parse(uri)
         http = Net::HTTP.new(uri.host, uri.port)
-        content = http.request(Net::HTTP::Get.new(uri.request_uri))
-        @source = Root.parse content.body
+        content = http.request(Net::HTTP::Get.new(uri.request_uri)).body
+        raise IOError, "the repsponse from tfl api is empty" if content.size==0
+        @source = Root.parse content
         @source.disruptions
       end
     end
